@@ -1,0 +1,28 @@
+context ... a nutshell to create dif apis
+sparkContext ...sc...rdd api (old api low priority api)...programming friendly
+
+sqlContext ....... dataframe api................. sql friendly
+sparkStreamingContext.....dstream api... semi structure ... both
+sparkSession ..... dataset api... any
+
+///rdd/////////////
+collection java objects that follow immutablity, fault tolerance , laziness  properties called RDD
+2 ways to create rdd ... 1) parallalise 2) textFile("path")
+
+if a scala function/method feel lazy to process ..... transformations: map, filter,
+a scala function/method doesn't feel lazy to process called ... action: collect,take
+
+
+////////////////////////////
+cow ... grass
+tiger .. blood
+
+java ...jvm object
+hive .. table
+sql .... schema
+pig ... relation
+similarly
+spark ... rdd
+ //fundamental abstraction
+
+..
