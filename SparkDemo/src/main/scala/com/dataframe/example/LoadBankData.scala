@@ -27,7 +27,7 @@ object LoadBankData {
 
     //example of concat_ws
     val df4 = spark.sql("select concat_ws(' ',first_name,last_name) as full_name, * from ustab")
-    val l = df.withColumn("Cname",$"company_name")
+    val l = df.withColumn("Cname",$"company_name").where($"company_name".like("New%"))
     //programming sql
     l.show(100,false)
 
