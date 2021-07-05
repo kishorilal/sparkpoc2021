@@ -19,13 +19,13 @@ object ConnectAWSMysql {
 //      .option("password","admin123")
 //      .load()
     val df1 = spark.read.format("jdbc")
-      .option("url","jdbc:mysql://mysql.ce5lmvnp4idz.ap-south-1.rds.amazonaws.com:3306/employee?useSSL=false")
+      //.option("url","jdbc:mysql://mysql.ce5lmvnp4idz.ap-south-1.rds.amazonaws.com:3306/employee?useSSL=false")
+      .option("url","jdbc:mysql://database-1.ce5lmvnp4idz.ap-south-1.rds.amazonaws.com:3306/employee")
       .option("driver","com.mysql.jdbc.Driver")
       .option("dbtable","emp")
       .option("user","admin")
       .option("password","admin123")
       .load()
-
   // val df = df1.withColumn("comm");
     df1.show()
     spark.stop()

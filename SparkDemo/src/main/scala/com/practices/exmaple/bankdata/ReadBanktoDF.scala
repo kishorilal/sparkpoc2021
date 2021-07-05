@@ -3,7 +3,7 @@ package com.practices.exmaple.bankdata
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._
 
-object ReadBandtoDF {
+object ReadBanktoDF {
   def main(args: Array[String]) {
     val spark = SparkSession.builder.master("local[*]").appName("ReadBandtoDF").getOrCreate()
     //    val ssc = new StreamingContext(spark.sparkContext, Seconds(10))
