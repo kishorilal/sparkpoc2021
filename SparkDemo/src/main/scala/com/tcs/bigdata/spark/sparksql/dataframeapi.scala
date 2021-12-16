@@ -22,6 +22,7 @@ object dataframeapi {
     df.show(9)
     df.printSchema()
 
+
     spark.stop()
   }
 }
